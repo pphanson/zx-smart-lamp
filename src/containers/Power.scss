@@ -1,0 +1,30 @@
+.power {
+    display: flex;
+    height: 100%;
+
+    &-left {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+
+        &-map {
+            flex: 1 0 300px;
+            min-width: 300px;
+        }
+
+        &-cards {
+            flex: 1 0 200px;
+            padding: 16px;
+        }
+
+        &-line {
+            flex: 1 0 300px;
+            position: relative;
+        }
+    }
+
+    &-right {
+        flex: 0 0 250px;
+        min-width: 250px;
+    }
+}

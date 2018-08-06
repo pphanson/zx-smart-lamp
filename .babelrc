@@ -1,0 +1,37 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-runtime",
+    "react-hot-loader/babel",
+    "babel-plugin-transform-object-rest-spread",
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true}],
+    ["wildcard", {
+      "exts": ["js", "es6", "es", "jsx", "javascript", "png"]
+    }]
+
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "react",
+        [
+          "env",
+          {
+            "modules": "commonjs"
+          }
+        ]
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs"
+      ]
+    }
+  }
+}

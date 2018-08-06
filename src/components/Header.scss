@@ -1,0 +1,30 @@
+.header {
+    padding: 0px 0px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    &-left {
+        flex-basis: 250px;
+        background: rgb(76, 251,202);
+        font-weight: bold;
+        text-align: center
+    }
+
+    &-right {
+        flex: auto;
+    }
+
+    &-title {
+        font-size: 16px;
+        height: 32px;
+        line-height: 32px;
+        color: rgba(0, 0, 0, 0.65)
+    }
+
+    &-subTitle {
+        height: 10px;
+        line-height: 10px;
+        font-size: 10px;
+        color: rgba(0, 0, 0, 0.65)
+    }
+}

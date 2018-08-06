@@ -1,0 +1,68 @@
+$current-color: rgb(76, 251, 201);
+$average-color: rgb(31, 173, 247);
+$max-color:  rgb(164, 90, 243);
+
+.powercard {
+    width: 348px;
+    & > div {
+        display: flex;
+        align-items: center;
+    }
+
+    &-left  {
+        flex: 0 0 150px;
+        .carditem {
+            &-attribute {
+                display: block;
+            }
+        
+            &-value {
+        
+            }
+        
+            &-unit {
+                margin-left: 5px;
+                font-size: 12px;
+            }
+        
+        }
+
+        .carditem-current {
+            @extend .carditem !optional;
+
+            .carditem-attribute {
+                font-size: 16px;
+            }
+
+            .carditem-value {
+                font-size: 24px;
+                color: $current-color;
+            }
+
+        }
+
+        .carditem-average {
+            @extend .carditem !optional;
+            .carditem-value {
+                color: $average-color
+            }
+
+        }
+
+        .carditem-max {
+            @extend .carditem !optional;
+            .carditem-value {
+                color: $max-color
+            }
+
+        }
+    }
+
+    &-right {
+        flex: 0 0 150px;
+        flex-wrap: wrap;
+    }
+}
+
+
+

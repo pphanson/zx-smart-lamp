@@ -1,0 +1,86 @@
+.video
+{
+    display: flex;
+
+    &-container
+    {
+        flex: 1 0 auto;
+        height: 100%;
+    }
+
+    &-control
+    {
+        flex: 0 0 200px;
+
+        &-title
+        {
+            margin: 17px 10px 10px 17px;
+        }
+
+        &-up-left
+        {
+            &::before
+            {
+                transform: rotate(-45deg);
+            }
+        }
+
+        &-up-right
+        {
+            &::before
+            {
+                transform: rotate(45deg);
+            }
+        }
+
+        &-down-left
+        {
+            &::before
+            {
+                transform: rotate(45deg);
+            }
+        }
+
+        &-down-right
+        {
+            &::before
+            {
+                transform: rotate(-45deg);
+            }
+        }
+
+        &-button
+        {
+            margin: 5px 10px;
+
+        }
+
+        &-label
+        {
+            margin: 5px 10px;
+            text-align: left;
+        }
+
+        &-direction
+        {
+            margin: 10px;
+
+            &-col
+            {
+                text-align: center;
+                margin: 1px;
+            }
+        }
+
+        &-visual
+        {
+            margin: 10px;
+
+            &-col
+            {
+                text-align: center;
+            }
+        }
+
+    }
+}

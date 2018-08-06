@@ -1,0 +1,39 @@
+.wheather
+{
+    &-card
+    {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    &-icon
+    {
+        height: 56px;
+        width: 54px;
+        margin: auto;
+    }
+
+    &-meta
+    {
+        text-align: center;
+    }
+
+    &-title
+    {
+        color: #40fcc9;
+        font-size: 16px;
+    }
+
+    &-value
+    {
+        font-size: 28px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #cccccc;
+        font-weight: 500;
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+    }
+}
